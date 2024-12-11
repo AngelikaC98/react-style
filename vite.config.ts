@@ -4,10 +4,10 @@ import { defineConfig } from "vite"
 
 export default defineConfig({
   plugins: [react()],
+   base: "/react-style/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      base: "/react-style/"
     },
   },
 })
